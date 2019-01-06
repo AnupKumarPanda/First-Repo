@@ -13,7 +13,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class Call_ARD
 {
-	public static void main(String[] args) throws Exception 
+	public static void 
 	{
 		//Gety a mobile number
 		Scanner sc =new Scanner(System.in);
