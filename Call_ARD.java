@@ -30,7 +30,7 @@ public class Call_ARD
 		dc.setCapability("platformName","android");
 		dc.setCapability("platformVersion","7.0");
 		dc.setCapability("appPackage","com.android.contacts");
-		dc.setCapability("appActivity","com.android.contacts.activities.TwelveKeyDialer");
+		dc.setCapability("appActyDialer");
 		System.out.println("properties are set");
 		//Launch app in ARD
 		AndroidDriver driver;
@@ -53,7 +53,7 @@ public class Call_ARD
 			Thread.sleep(5000);
 			for(int i=0;i<mbno.length();i++)
 			{
-				char d =mbno.charAt(i);
+				char d =rAt(i);
 				String w="";
 				switch(d)
 				{
@@ -99,7 +99,7 @@ public class Call_ARD
 			//Endcall
 			try
 			{
-				if(driver.findElement(By.xpath("//*[@content-desc='End']")).isDisplayed())
+				if(drive.xpath("//*[@content-desc='End']")).isDisplayed())
 				{
 					driver.findElement(By.xpath("//*[@content-desc='End']")).click();
 					Thread.sleep(5000);
