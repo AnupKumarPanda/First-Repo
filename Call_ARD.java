@@ -6,7 +6,7 @@ import java.util.Scanner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+ort org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -20,10 +20,10 @@ public class Call_ARD
 		System.out.println("Enter mobile number");
 		String mbno= sc.nextLine();
 		//Start Appium server and form URL for it
-		Runtime.getRuntime().exec("cmd.exe /c start cmd /k \"appium -a 127.0.0.1 -p 4723 \" ");
+e.getRuntime().exec("cmd.exe /c start cmd /k \"appium -a 127.0.0.1 -p 4723 \" ");
 		URL u= new URL("http://127.0.0.1:4723/wd/hub");
 		System.out.println("Appium server started");
-		//Maintain details base for app in ARD
+
 		DesiredCapabilities dc =new DesiredCapabilities();
 		dc.setCapability(CapabilityType.BROWSER_NAME,"");
 		dc.setCapability("deviceName","47ebca7d0104");
