@@ -33,6 +33,7 @@ public class Call_ARD
 		dc.setCapability("appActyDialer");
 		System.out.println("properties are set");
 		//Launch app in ARD
+		//Edit my anup
 		AndroidDriver driver;
 		while(true)
 		{
